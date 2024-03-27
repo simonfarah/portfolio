@@ -2,7 +2,7 @@ import { defineCollection, defineConfig, s } from 'velite';
 
 const works = defineCollection({
   name: 'Work',
-  pattern: '**/*.{md,mdx}',
+  pattern: 'work/**/*.{md,mdx}',
   schema: s.object({
     slug: s.path(),
     title: s.string(),
