@@ -9,8 +9,10 @@ export default function WorkPage() {
       <h1 className="mb-8 text-2xl">my work</h1>
 
       <p>
-        On a mission to build website that people love, and along the way,
-        contribute to open-source projects. Here's a list of my projects so far.
+        On a mission to build websites that people love. Working with a goal to
+        deliver fast, resilient solutions optimized for scale — performance and
+        scalabilty are priorities on my radar. Doing open-source work in my free
+        time.
       </p>
 
       <hr className="my-6 border-muted" />
@@ -26,16 +28,12 @@ export default function WorkPage() {
               </Link>
             </div>
 
-            <div>
-              <p className="mb-1 text-sm">role:</p>
-
-              <div className="flex flex-wrap gap-2">
-                {work.tags.map((tag) => (
-                  <Badge key={tag} variant="secondary">
-                    {tag}
-                  </Badge>
-                ))}
-              </div>
+            <div className="flex flex-wrap gap-2">
+              {work.tags.map((tag) => (
+                <Badge key={tag} variant="secondary">
+                  {tag}
+                </Badge>
+              ))}
             </div>
           </div>
         ))}
