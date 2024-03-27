@@ -3,7 +3,31 @@
 @tailwind utilities;
 
 @layer base {
-  body {
-    @apply bg-zinc-950 font-default text-zinc-300;
+  :root {
+    --background: 160 7% 8%;
+    --foreground: 180 9% 98%;
+
+    --primary: 152 73% 39%;
+    --primary-foreground: 120 9% 2%;
+
+    --secondary: 150 8% 19%;
+    --secondary-foreground: 180 9% 98%;
+
+    --muted: 153 7% 29%;
+    --muted-foreground: 153 8% 49%;
+
+    --border: 156 8% 12%;
+    --ring: 207 73% 57% / 0.6;
+
+    --radius: 0.325rem;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-display;
   }
 }

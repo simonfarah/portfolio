@@ -14,7 +14,13 @@ export const metadata: Metadata = {
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="en">
-      <body className={cx(fontDefault.variable, fontDisplay.variable)}>
+      <body
+        className={cx(
+          fontDefault.variable,
+          fontDisplay.variable,
+          'bg-background text-foreground selection:bg-primary/90 selection:text-primary-foreground font-default',
+        )}
+      >
         {children}
       </body>
     </html>
