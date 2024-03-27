@@ -1,12 +1,13 @@
 import { Icons } from '#/components/icons';
 import { Link } from '#/components/ui/link';
+import { NavLinks } from '../_components/nav-links';
 
 export default function HomePage() {
   return (
     <section className="flex min-h-svh flex-col items-center justify-center p-5">
       <nav>
         <ul className="flex items-center justify-center gap-4">
-          <Link href="/work">Work</Link>
+          <NavLinks />
 
           <Link href="mailto:farahsimon22@gmail.com" target="_blank">
             <Icons.mail className="h-5 w-5" />
