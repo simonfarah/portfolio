@@ -18,10 +18,10 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         className={cx(
           fontDefault.variable,
           fontDisplay.variable,
-          'bg-background text-foreground selection:bg-primary/90 selection:text-primary-foreground font-default',
+          'bg-background font-default text-foreground selection:bg-primary/90 selection:text-primary-foreground',
         )}
       >
-        {children}
+        <main>{children}</main>
       </body>
     </html>
   );
