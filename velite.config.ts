@@ -4,11 +4,9 @@ const works = defineCollection({
   name: 'Work',
   pattern: 'work/**/*.{md,mdx}',
   schema: s.object({
-    slug: s.path(),
     title: s.string(),
-    description: s.string(),
+    link: s.string(),
     tags: s.array(s.string()),
-    content: s.mdx(),
   }),
 });
 
