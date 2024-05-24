@@ -7,6 +7,7 @@ const works = defineCollection({
     title: s.string(),
     link: s.string(),
     tags: s.array(s.string()),
+    priority: s.number(),
   }),
 });
 

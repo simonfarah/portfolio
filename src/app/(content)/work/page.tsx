@@ -4,6 +4,8 @@ import { Link } from '#/components/ui/link';
 import { works } from '#/velite';
 
 export default function WorkPage() {
+  works.sort((a, b) => a.priority - b.priority);
+
   return (
     <section>
       <h1 className="mb-8 text-2xl">my work</h1>
